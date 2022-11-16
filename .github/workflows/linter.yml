@@ -28,16 +28,13 @@ jobs:
 #         run: pip install isort
         
       - name: black, isort,  chek files with flag
-        run: |
-          isort . --diff
-          flake8 --extend-ignore E203,W234 .
-          
-     # black --diff .      
-          
-#       - name: isort check files
-#         run: |
-#           isort . --diff
-          
+        run: black --diff .
+        
+      - name: isort check 
+        run: isort . --diff
+      
+      - name: flake8 check
+        run: flake8 --extend-ignore E203,W234 .
           
           
         
