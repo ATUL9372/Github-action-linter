@@ -15,11 +15,11 @@ jobs:
       - name: install python3
         run: sudo apt install python3-pip
         
-      - name: install pip install black, isort, flake8
-        run: |
-          pip install black
-          pip install isort
-          pip install flake8
+#       - name: install pip install black, isort, flake8
+#         run: |
+#           pip install black
+#           pip install isort
+#           pip install flake8
 
 #       - name: install pip install isort
 #         run: pip install isort
