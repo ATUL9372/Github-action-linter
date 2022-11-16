@@ -21,14 +21,15 @@ jobs:
       - name: install pip install isort
         run: pip install isort
         
-#       - name: black chek files with flag
-#         run: |
-#           black --diff .
-#           black --check --diff .
-          
-      - name: isort check files
+      - name: black chek files with flag
         run: |
+          black --diff .
+          black --check --diff .
           isort . --diff
+          
+#       - name: isort check files
+#         run: |
+#           isort . --diff
           
           
           
