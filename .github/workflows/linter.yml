@@ -29,11 +29,10 @@ jobs:
         
       - name: black, isort,  chek files with flag
         run: |
-        #  black --diff .
           isort . --diff
           flake8 --extend-ignore E203,W234 .
           
-          
+     # black --diff .      
           
 #       - name: isort check files
 #         run: |
