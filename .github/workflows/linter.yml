@@ -17,9 +17,22 @@ jobs:
         
       - name: install pip install black
         run: pip install black
+
+      - name: install pip install isort
+        run: pip install isort
         
-      - name: black chek files
-        run: black --diff .
+      - name: black chek files with flag
+        run: |
+          black --diff .
+          black --check --diff .
+          
+      - name: isort check files
+        run: |
+          isort . --diff
+          
+          
+        
+          
         
       
         
