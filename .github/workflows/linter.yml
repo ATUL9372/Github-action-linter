@@ -15,25 +15,18 @@ jobs:
       - name: install python3
         run: sudo apt install python3-pip
         
-#       - name: install pip install black, isort, flake8
-#         run: |
-#           pip install black
-#           pip install isort
-#           pip install flake8
-
-#       - name: install pip install isort
-#         run: pip install isort
-        
-#       - name: install pip install 
-#         run: pip install isort
-        
+      - name: install pip install black, isort, flake8
+        run: |
+          pip install black
+          pip install isort
+          pip install flake8
+    
 #       - name: black, isort,  chek files with flag
 #         run: black --diff .
         
         
       - name: isort check 
-        run: isort .
-#         run: isort . --diff
+        run: isort . --diff
       
 #       - name: flake8 check
 #         run: flake8 --extend-ignore E203,W234 .
