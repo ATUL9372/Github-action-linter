@@ -32,7 +32,7 @@ jobs:
         
         
       - name: isort check 
-        run: isort .isort.cfg
+        run: isort .
 #         run: isort . --diff
       
 #       - name: flake8 check
