@@ -18,3 +18,8 @@ jobs:
       - name: install pip install black
         run: pip install black
         
+      - name: black chek files
+        run: black --diff .
+        
+      
+        
